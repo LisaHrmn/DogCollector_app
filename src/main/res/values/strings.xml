@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dog Collector</string>
+    <string name="btn_start">start</string>
+    <string name="btn_close">quit</string>
+    <string name="btn_settings">settings</string>
+    <string name="btn_back">back</string>
+    <string name="btn_count">I met a good dog</string>
+    <string name="txt_counter">0</string>
+    <string name="txt_explain">Keep track of the amount of dogs you meet and get a dog fact as treat every time!</string>
+    <string name="txt_fact" translatable="false">.</string>
+    <string name="btn_map">find dog parks near you</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

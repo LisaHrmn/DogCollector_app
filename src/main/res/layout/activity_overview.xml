@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverviewActivity">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="88dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="back"
+        android:text="@string/btn_back"
+        app:layout_constraintBottom_toTopOf="@+id/textView_explain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_facts"
+        android:layout_width="293dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:text="@string/txt_fact"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_explain" />
+
+    <TextView
+        android:id="@+id/textView_counter"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/txt_counter"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_facts" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="count"
+        android:text="@string/btn_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_counter" />
+
+    <Button
+        android:id="@+id/button_map"
+        android:layout_width="174dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="openMap"
+        android:text="@string/btn_map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_count"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_explain"
+        android:layout_width="299dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/txt_explain"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
